@@ -8,6 +8,8 @@ Source: https://github.com/ethernic/deluge-web-dark-theme
 ---
 EOF
 
+apt-get update
+apt-get install --no-install-recommends -y curl jq
 curl -OJL https://github.com/ethernic/deluge-web-dark-theme/raw/main/deluge_web_dark_theme.tar.gz 
 tar -xzf deluge_web_dark_theme.tar.gz -C /usr/lib/python3/dist-packages/deluge/ui/web
 rm deluge_web_dark_theme.tar.gz
