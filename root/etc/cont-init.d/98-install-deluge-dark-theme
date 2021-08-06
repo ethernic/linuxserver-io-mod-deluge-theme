@@ -1,0 +1,16 @@
+#!/usr/bin/with-contenv bash
+
+cat <<EOF
+---
+Deluge web dark theme installer
+Upstream Source: https://github.com/joelacus/deluge-web-dark-theme
+Source: https://github.com/ethernic/deluge-web-dark-theme
+---
+EOF
+
+curl -OJL https://github.com/ethernic/deluge-web-dark-theme/raw/main/deluge_web_dark_theme.tar.gz 
+tar -xzf deluge_web_dark_theme.tar.gz -C /usr/lib/python3/dist-packages/deluge/ui/web
+rm deluge_web_dark_theme.tar.gz
+
+echo "Done! The theme is installed in the proper directory."
+
