@@ -3,7 +3,7 @@ name: Build Image
 on: [push, pull_request, workflow_dispatch]
 
 env:
-  ENDPOINT: "ethernic/linuxserver-io-mod-deluge-theme"
+  ENDPOINT: "ethernic/linux-server-io-mod-deluge-theme"
   BRANCH: "main"
 
 jobs:
